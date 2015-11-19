@@ -68,8 +68,8 @@ namespace AutoReservation.Common.DataTransferObjects
             }
         }
 
-        private string basistarif;
-        public string Basistarif
+        private int? basistarif;
+        public int? Basistarif
         {
             get { return basistarif; }
             set

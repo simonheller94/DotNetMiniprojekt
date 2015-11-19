@@ -1,0 +1,14 @@
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\AutoReservation.Common.dll.config
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\AutoReservation.Common.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\AutoReservation.Common.pdb
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\EntityFramework.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\EntityFramework.SqlServer.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\Ninject.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\EntityFramework.xml
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\EntityFramework.SqlServer.xml
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\Ninject.xml
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\de\EntityFramework.resources.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\bin\Debug\de\EntityFramework.SqlServer.resources.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\obj\Debug\AutoReservation.Common.csprojResolveAssemblyReference.cache
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\obj\Debug\AutoReservation.Common.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Common\obj\Debug\AutoReservation.Common.pdb

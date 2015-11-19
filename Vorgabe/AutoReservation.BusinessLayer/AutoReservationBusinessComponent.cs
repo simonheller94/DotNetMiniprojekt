@@ -12,5 +12,7 @@ namespace AutoReservation.BusinessLayer
 
             throw new LocalOptimisticConcurrencyException<T>(string.Format("Update {0}: Concurrency-Fehler", typeof(T).Name), original);
         }
+
+
     }
 }

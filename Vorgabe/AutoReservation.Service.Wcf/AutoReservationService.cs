@@ -4,6 +4,7 @@ using System.Diagnostics;
 using AutoReservation.Common.DataTransferObjects;
 using System.Collections.Generic;
 using AutoReservation.Dal;
+using System.Linq;
 
 namespace AutoReservation.Service.Wcf
 {
@@ -18,10 +19,14 @@ namespace AutoReservation.Service.Wcf
         public void deleteAuto(AutoDto entity)
         {
             WriteActualMethod();
+            Auto auto = entity.ConvertToEntity();
 
             using (var context = new AutoReservationEntities())
             {
+                var autoToDelete = context.Autos.First(a => a.Id == entity.Id);
+                context.Autos.Remove(autoToDelete);
 
+                context.SaveChanges();
             }
             throw new NotImplementedException();
         }
