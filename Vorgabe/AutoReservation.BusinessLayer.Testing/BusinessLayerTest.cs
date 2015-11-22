@@ -29,6 +29,7 @@ namespace AutoReservation.BusinessLayer.Testing
         [TestMethod]
         public void Test_UpdateAuto()
         {
+            //Assert.AreEqual(target.updateAuto, Test_UpdateAuto);
             Assert.Inconclusive("Test not implemented.");
         }
 
