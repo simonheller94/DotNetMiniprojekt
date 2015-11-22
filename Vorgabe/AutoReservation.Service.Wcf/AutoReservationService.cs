@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using AutoReservation.Dal;
 using System.Linq;
 using AutoReservation.BusinessLayer;
+using System.ServiceModel;
+using System.Data.Entity.Infrastructure;
 
 namespace AutoReservation.Service.Wcf
 {
@@ -105,22 +107,52 @@ namespace AutoReservation.Service.Wcf
         public void updateAuto(AutoDto modified, AutoDto original)
         {
             WriteActualMethod();
-
-            target.updateAuto(modified.ConvertToEntity(), original.ConvertToEntity());
+            UpdateFault myUpdateFault = new UpdateFault();
+            try
+            {
+                target.updateAuto(modified.ConvertToEntity(), original.ConvertToEntity());
+            }
+            catch (DbUpdateConcurrencyException upex)
+            {
+                myUpdateFault.Result = true;
+                myUpdateFault.ErrorMessage = "Update couldnt complete";
+                myUpdateFault.ErrorDetails = upex.ToString();
+                throw new FaultException<UpdateFault>(myUpdateFault, upex.ToString());
+            }
         }
 
         public void updateKunde(KundeDto modified, KundeDto original)
         {
             WriteActualMethod();
-
-            target.updateKunde(modified.ConvertToEntity(), original.ConvertToEntity());
-        }
+            UpdateFault myUpdateFault = new UpdateFault();
+            try
+            {
+                target.updateKunde(modified.ConvertToEntity(), original.ConvertToEntity());
+            }
+            catch (DbUpdateConcurrencyException upex)
+            {
+                myUpdateFault.Result = true;
+                myUpdateFault.ErrorMessage = "Update couldnt complete";
+                myUpdateFault.ErrorDetails = upex.ToString();
+                throw new FaultException<UpdateFault>(myUpdateFault, upex.ToString());
+            }
+}
 
         public void updateReservation(ReservationDto modified, ReservationDto original)
         {
             WriteActualMethod();
-
-            target.updateReservation(modified.ConvertToEntity(), original.ConvertToEntity());
+            UpdateFault myUpdateFault = new UpdateFault();
+            try
+            {
+                target.updateReservation(modified.ConvertToEntity(), original.ConvertToEntity());
+            }
+            catch (DbUpdateConcurrencyException upex)
+            {
+                myUpdateFault.Result = true;
+                myUpdateFault.ErrorMessage = "Update couldnt complete";
+                myUpdateFault.ErrorDetails = upex.ToString();
+                throw new FaultException<UpdateFault>(myUpdateFault, upex.ToString());
+            }
         }
     }
 }

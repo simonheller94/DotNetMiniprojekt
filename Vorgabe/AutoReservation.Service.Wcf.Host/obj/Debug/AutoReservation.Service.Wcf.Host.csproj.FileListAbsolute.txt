@@ -16,3 +16,5 @@ D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.
 D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Host\bin\Debug\de\EntityFramework.SqlServer.resources.dll
 D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Host\obj\Debug\AutoReservation.Service.Wcf.Host.exe
 D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Host\obj\Debug\AutoReservation.Service.Wcf.Host.pdb
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Host\bin\Debug\AutoReservation.BusinessLayer.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Service.Wcf.Host\bin\Debug\AutoReservation.BusinessLayer.pdb
