@@ -5,7 +5,6 @@ namespace AutoReservation.Common.Interfaces
 {
     public interface IAutoReservationService
     {
-        //evtl. mehrere Interfaces (pro DTO eines)
 
         List<AutoDto> findAllAutos();
 
