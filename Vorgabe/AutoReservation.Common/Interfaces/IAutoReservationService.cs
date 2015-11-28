@@ -9,9 +9,10 @@ namespace AutoReservation.Common.Interfaces
     [ServiceContract]
     public interface IAutoReservationService
     {
-
+        [OperationContract]
         List<AutoDto> findAllAutos();
 
+        [OperationContract]
         AutoDto findAuto(int key);
 
         [OperationContract]
@@ -25,9 +26,10 @@ namespace AutoReservation.Common.Interfaces
         void deleteAuto(AutoDto entity);
 
 
-
+        [OperationContract]
         List<KundeDto> findAllKunden();
 
+        [OperationContract]
         KundeDto findKunde(int key);
 
         [OperationContract]
@@ -41,9 +43,10 @@ namespace AutoReservation.Common.Interfaces
         void deleteKunde(KundeDto entity);
 
 
-
+        [OperationContract]
         List<ReservationDto> findAllReservationen();
     
+        [OperationContract]
         ReservationDto findReservation(int key);
 
         [OperationContract]

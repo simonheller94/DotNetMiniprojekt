@@ -3,9 +3,6 @@ using System;
 using System.Diagnostics;
 using AutoReservation.Common.DataTransferObjects;
 using System.Collections.Generic;
-using AutoReservation.Dal;
-using System.Linq;
-using AutoReservation.BusinessLayer;
 using System.ServiceModel;
 using System.Data.Entity.Infrastructure;
 
@@ -13,7 +10,11 @@ namespace AutoReservation.Service.Wcf
 {
     public class AutoReservationService : IAutoReservationService
     {
-        private AutoReservationBusinessComponent target;
+        #pragma warning disable 0649
+
+        private BusinessLayer.AutoReservationBusinessComponent target = new BusinessLayer.AutoReservationBusinessComponent();
+
+        #pragma warning restore 0649
 
         private static void WriteActualMethod()
         {

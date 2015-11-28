@@ -56,11 +56,12 @@ namespace AutoReservation.Ui.ViewModels
         {
             Autos.Clear();
             autosOriginal.Clear();
-            foreach (var auto in Service.Autos)
+            foreach (var auto in Service.findAllAutos())
             {
                 Autos.Add(auto);
                 autosOriginal.Add(auto.Clone());
             }
+            
             SelectedAuto = Autos.FirstOrDefault();
         }
 
@@ -89,12 +90,12 @@ namespace AutoReservation.Ui.ViewModels
             {
                 if (auto.Id == default(int))
                 {
-                    Service.InsertAuto(auto);
+                    Service.insertAuto(auto);
                 }
                 else
                 {
                     var original = autosOriginal.FirstOrDefault(ao => ao.Id == auto.Id);
-                    Service.UpdateAuto(auto, original);
+                    Service.updateAuto(auto, original);
                 }
             }
             Load();
@@ -150,7 +151,7 @@ namespace AutoReservation.Ui.ViewModels
 
         private void Delete()
         {
-            Service.DeleteAuto(SelectedAuto);
+            Service.deleteAuto(SelectedAuto);
             Load();
         }
 

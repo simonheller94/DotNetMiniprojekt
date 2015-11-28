@@ -115,15 +115,15 @@ namespace AutoReservation.Ui.ViewModels
             Kunden.Clear();
             Autos.Clear();
 
-            foreach (KundeDto kunde in Service.Kunden)
+            foreach (KundeDto kunde in Service.findAllKunden())
             {
                 Kunden.Add(kunde);
             }
-            foreach (AutoDto auto in Service.Autos)
+            foreach (AutoDto auto in Service.findAllAutos())
             {
                 Autos.Add(auto);
             }
-            foreach (ReservationDto reservation in Service.Reservationen)
+            foreach (ReservationDto reservation in Service.findAllReservationen())
             {
                 Reservationen.Add(reservation);
                 reservationenOriginal.Add((ReservationDto)reservation.Clone());
@@ -156,12 +156,12 @@ namespace AutoReservation.Ui.ViewModels
             {
                 if (reservation.ReservationNr == default(int))
                 {
-                    Service.InsertReservation(reservation);
+                    Service.insertReservation(reservation);
                 }
                 else
                 {
                     var original = reservationenOriginal.FirstOrDefault(ao => ao.ReservationNr == reservation.ReservationNr);
-                    Service.UpdateReservation(reservation, original);
+                    Service.updateReservation(reservation, original);
                 }
             }
             Load();
@@ -221,7 +221,7 @@ namespace AutoReservation.Ui.ViewModels
 
         private void Delete()
         {
-            Service.DeleteReservation(SelectedReservation);
+            Service.deleteReservation(SelectedReservation);
             Load();
         }
 

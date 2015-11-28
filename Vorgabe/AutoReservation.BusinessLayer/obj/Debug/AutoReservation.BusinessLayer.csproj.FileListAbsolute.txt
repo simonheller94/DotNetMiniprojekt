@@ -11,3 +11,5 @@ D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.Business
 D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.csprojResolveAssemblyReference.cache
 D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.dll
 D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\obj\Debug\AutoReservation.BusinessLayer.pdb
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.Common.dll
+D:\HSR\2015HS\DotNet\02_Uebungen\99_Miniprojekt\Vorgabe\AutoReservation.BusinessLayer\bin\Debug\AutoReservation.Common.pdb

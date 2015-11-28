@@ -1,4 +1,6 @@
-﻿using AutoReservation.Dal;
+﻿using AutoReservation.Common.DataTransferObjects;
+using AutoReservation.Common.Interfaces;
+using AutoReservation.Dal;
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -7,7 +9,6 @@ namespace AutoReservation.BusinessLayer
 {
     public class AutoReservationBusinessComponent
     {
-
         private static void HandleDbConcurrencyException<T>(AutoReservationEntities context, T original) where T : class
         {
             var databaseValue = context.Entry(original).GetDatabaseValues();
@@ -18,6 +19,7 @@ namespace AutoReservation.BusinessLayer
 
         public void deleteAuto(Auto entity)
         {
+            
             using (var context = new AutoReservationEntities())
             {
                 context.Autos.Remove(entity);
@@ -52,6 +54,7 @@ namespace AutoReservation.BusinessLayer
         {
            using (var context = new AutoReservationEntities())
             {
+                
                 var autoList = context.Autos.ToList();
 
                 return autoList;

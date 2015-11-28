@@ -118,7 +118,9 @@
     <None Include="..\MsTeMiniproject.snk">
       <Link>MsTeMiniproject.snk</Link>
     </None>
-    <None Include="App.Config" />
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="AutoReservationEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AutoReservationEntities.Designer.cs</LastGenOutput>
