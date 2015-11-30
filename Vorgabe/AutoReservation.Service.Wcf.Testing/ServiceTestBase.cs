@@ -22,6 +22,8 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void Test_GetAutos()
         {
+            Target.findAllAutos();
+            //Assert.AreEqual();
             Assert.Inconclusive("Test not implemented.");
         }
 
@@ -40,6 +42,7 @@ namespace AutoReservation.Service.Wcf.Testing
         [TestMethod]
         public void Test_GetAutoById()
         {
+            //Target.findAuto(1);
             Assert.Inconclusive("Test not implemented.");
         }
 

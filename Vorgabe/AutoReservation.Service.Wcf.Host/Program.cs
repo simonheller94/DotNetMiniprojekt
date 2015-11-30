@@ -13,7 +13,8 @@ namespace AutoReservation.Service.Wcf.Host
             ServiceHost host = new ServiceHost(typeof(AutoReservationService));
 
             //Open myServiceHost
-            host.Open();
+
+            host.Open();    //only possible with administrator mode
 
             Console.WriteLine("AutoReservationService started.");
             Console.WriteLine();
